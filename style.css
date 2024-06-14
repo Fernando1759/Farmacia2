@@ -1,0 +1,326 @@
+/* Estilos generales */
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    padding:0;
+}
+
+/* Estilos de navegación FLEXBOX FER*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    
+}
+
+nav img#icono {
+   
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        margin-right: 20px;
+        
+    }
+
+
+nav a  {
+    color:  #45a049;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+   
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: translateX(-5px);
+}
+
+/* Encabezado */
+.cabeza {
+    background-color:  #45a049;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.contenido-centrado {
+    text-align: center;
+    padding: 20px;
+}
+
+.video {
+    margin: 0 auto 20px;
+}
+
+/* Estilos de pie de página */
+.pie {
+    background-color: #f8f9fa;
+    text-align: left;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    color: #6c757d;
+}
+
+.footer-section a {
+    display: inline-block;
+    margin: 5px;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer-section a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-section a:hover img {
+    filter: brightness(0.8);
+}
+
+/* Estilo específico para el icono en el pie de página */
+.farm {
+    width: 300px;
+    margin-top: 1em;
+    border-radius: 5px;
+}
+
+/* Estilos de mapa */
+#map {
+    height: 400px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contenedor personalizado */
+.contenedor1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 120%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+/* Contenedor productos */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1,5em;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+
+
+.product p {
+    margin: 0.5em 0;
+}
+
+.price {
+    font-size: 1.1em;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.buy-button { /* alineacion de button buy Fer (5)*/ 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.5em 0;
+    cursor: pointer;
+    border-radius: 5px;
+}   
+
+.buy-button:hover {
+    background-color: #45a049;
+
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+    animation: girar 2s infinite; /* Aplica la animación al ícono */ /* animacion de button buy Fer*/ 
+}
+
+/* Contenedor recetas */
+.receta-digital {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 2em;
+}
+
+.receta-digital h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.whatsapp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #25D366;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
+
+.whatsapp-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+}
+
+/* Contenedor formulario */
+.form-centrado {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el formulario */
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para el label */
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para los inputs */
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para el fieldset */
+    box-sizing: border-box;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para el botón */
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
